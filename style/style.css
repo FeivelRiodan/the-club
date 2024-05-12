@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2,
+  h3 {
+    color: #00a2c6;
+  }
+  
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+  
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  nav a {
+    font-size: 18px;
+  
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav a:hover {
+    font-weight: bold;
+  }
+  
+  .profile header {
+    text-align: center;
+  }
+  
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+   
+  .profile img {
+    width: 200px;
+  }
+   
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+   
+  .jumbotron {
+    display: flex;
+    overflow: auto;
+    padding: 60px 60px 0px;
+    background-color: #300066;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .motto{
+    background-color: #300066;
+    padding: 40px 0 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0px;
+  }
+
+  .jumbotron b{
+    order: 0;
+    font-family: 'Expletus Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: 4px 8px 8px #000;
+    color: #FFFED6;
+  }
+
+  .ghost{
+    order: 3;
+    flex-grow: 1;
+    width:auto;
+    }
+    
+    .paclogo{
+    order : 0;
+    }
+
+  .lub{
+    order: 4;    
+    font-family: 'bungee';
+    font-size: 85px;
+    color: #FAFF0E;
+    -webkit-text-stroke: 4px black;
+    }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  ul{
+    margin: 0;
+  }
+  
+  nav li {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 1.5em;
+  }
+  nav li:hover {
+    background-color: #400089;
+  }
+  
+  nav {
+    background-color: #5900bf;
+    position: sticky;
+    top: 0;
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  article{
+    background-color: #002878;
+    margin-top: 1em;
+  }
+   
+  #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+   
+  aside {
+    float: right;
+    width: 25%;
+  
+    padding-left: 20px;
+  }
+  
+  #content {
+    flex: 5;
+  }
+  aside {
+    flex: 1;
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  p{
+    color: rgb(241, 245, 227);
+  }
+
+  table{
+    color: rgb(241, 245, 227);
+  }
+
+  .link{
+    display: flex;
+    font-family: 'Barlow';
+    font-size: 30px;
+    text-align: center;
+    flex-direction: column;
+}
+
+  .link b{
+    align-self: flex-start;
+    text-align: center;
+    padding-left: 5em;
+  }
+
+  .pics{
+    align-self: flex-start;
+  }
+
+  .windah{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+   
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+    main aside {
+      align-self: stretch;
+    }
+  }
